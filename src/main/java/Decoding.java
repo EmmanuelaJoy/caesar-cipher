@@ -5,6 +5,7 @@ public class Decoding {
 
 
     public String getInputText(String text) {
-        return text= "";
+        this.encodedText = text;
+        return text;
     }
 }
