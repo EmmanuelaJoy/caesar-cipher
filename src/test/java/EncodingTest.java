@@ -49,6 +49,12 @@ public class EncodingTest {
     }
 
     @Test
+    public void encode_lettersWithNumber_String() {
+        Encoding encoding = new Encoding();
+        assertEquals("j bn 15", encoding.encodeText("i am 15", 1));
+    }
+
+    @Test
     public void encode_ignoreWhiteSpace_String() {
         Encoding encoding = new Encoding();
         assertEquals("uif rvjdl", encoding.encodeText("the quick", 1));
