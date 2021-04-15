@@ -32,4 +32,10 @@ public class DecodingTest {
         Decoding decoding = new Decoding("b", 1);
         assertEquals('a', decoding.decodeSingleCharacter());
     }
+
+    @Test
+    public void decode_multipleCharacters_String() {
+        Decoding decoding = new Decoding("bcd", 1);
+        assertEquals("abc", decoding.decodeMultipleCharacters());
+    }
 }

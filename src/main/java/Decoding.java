@@ -30,4 +30,7 @@ public class Decoding {
         return letter;
     }
 
+    public String decodeMultipleCharacters() {
+        return " ";
+    }
 }
