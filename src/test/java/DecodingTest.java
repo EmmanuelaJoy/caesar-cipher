@@ -27,5 +27,9 @@ public class DecodingTest {
         assertEquals(1, decoding.getInputtedKey());
     }
 
-
+    @Test
+    public void decode_singleCharacter_Character() {
+        Decoding decoding = new Decoding("b", 1);
+        assertEquals('a', decoding.decodeSingleCharacter());
+    }
 }

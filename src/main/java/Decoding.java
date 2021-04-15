@@ -15,4 +15,8 @@ public class Decoding {
     public int getInputtedKey() {
       return this.inputtedKey;
     }
+
+    public char decodeSingleCharacter() {
+        return ' ';
+    }
 }
