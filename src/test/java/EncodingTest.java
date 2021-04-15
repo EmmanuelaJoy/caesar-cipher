@@ -22,4 +22,10 @@ public class EncodingTest {
         assertEquals("", encoding.getInput("", 1));
     }
 
+    @Test
+    public void validate_isKeyValid_Boolean() {
+        Encoding encoding = new Encoding();
+        boolean valid = true;
+        assertEquals(valid, encoding.validate(1));
+    }
 }
