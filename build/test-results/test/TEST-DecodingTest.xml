@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DecodingTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2021-04-15T10:59:47" hostname="emmanuela-HP-ENVY-x360-Convertible" time="0.005">
+<testsuite name="DecodingTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-04-15T11:02:20" hostname="emmanuela-HP-ENVY-x360-Convertible" time="0.006">
   <properties/>
   <testcase name="decode_ignoreWhiteSpace_String" classname="DecodingTest" time="0.002"/>
   <testcase name="decode_Instantiates_True" classname="DecodingTest" time="0.0"/>
   <testcase name="decode_emptyString_String" classname="DecodingTest" time="0.0"/>
   <testcase name="decode_getInputtedKey_int" classname="DecodingTest" time="0.0"/>
-  <testcase name="decode_multipleCharacters_String" classname="DecodingTest" time="0.0"/>
+  <testcase name="decode_ignoreSymbols_String" classname="DecodingTest" time="0.0"/>
+  <testcase name="decode_multipleCharacters_String" classname="DecodingTest" time="0.001"/>
   <testcase name="decode_getInputText_String" classname="DecodingTest" time="0.0"/>
   <testcase name="decode_upperCaseLetters_String" classname="DecodingTest" time="0.0"/>
   <testcase name="decode_singleCharacter_Character" classname="DecodingTest" time="0.0"/>

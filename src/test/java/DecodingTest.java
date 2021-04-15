@@ -50,4 +50,10 @@ public class DecodingTest {
         Decoding decoding = new Decoding("uif rvjdl", 1);
         assertEquals("the quick", decoding.decodeMultipleCharacters());
     }
+
+    @Test
+    public void decode_ignoreSymbols_String() {
+        Decoding decoding = new Decoding("@uif r$vjd#l", 1);
+        assertEquals("@the q$uic#k", decoding.decodeMultipleCharacters());
+    }
 }
