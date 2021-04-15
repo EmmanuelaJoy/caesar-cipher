@@ -20,7 +20,8 @@ public class Decoding {
     }
 
     public boolean validate() {
-
+        int key = this.inputtedKey;
+        return(key>0 && key<26);
     }
 
     public String decodeMultipleCharacters() {

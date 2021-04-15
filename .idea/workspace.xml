@@ -62,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.EncodingTest">
+  <component name="RunManager" selected="Gradle.DecodingTest">
     <configuration name="DecodingTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -105,8 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.EncodingTest" />
         <item itemvalue="Gradle.DecodingTest" />
+        <item itemvalue="Gradle.EncodingTest" />
       </list>
     </recent_temporary>
   </component>
