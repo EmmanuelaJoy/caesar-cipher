@@ -16,6 +16,7 @@ public class CaesarCipher{
             if (choice.equals("Encrypt")) {
                 System.out.println("Enter any word or letter and i will encrypt it for you");
                 String inputtedText = myConsole.readLine();
+
                 System.out.println("Now enter a key of any number in the range of 1-25");
                 int encryptingKey = Integer.parseInt(myConsole.readLine());
                 Encoding encoding = new Encoding(inputtedText, encryptingKey);
