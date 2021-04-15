@@ -4,25 +4,33 @@ public class Encoding {
 
     private String input;
     private int shiftKey;
-    public String getInput(String text, int key) {
-        this.input=text;
-        return text;
+    private String encodedText = "";
+
+    public Encoding(String input, int key) {
+        this.input = input;
+        this.shiftKey = key;
     }
 
-    public boolean validate(int key) {
-        this.shiftKey= key;
+    public String getInput() {
+       return this.input;
+    }
+
+    public int getShiftKey() {
+        return this.shiftKey;
+    }
+
+    public String getEncodedText() {
+        return encodedText;
+    }
+
+    public boolean validate() {
+        int key = this.shiftKey;
         return(key>0 && key<26);
     }
 
-    public String encodeText(String text, int key) {
-        String encodedText = "";
-        this.input = text;
-        this.shiftKey = key;
-//        if(key>26) {
-//            key = key % 26;
-//        }else if(key < 0) {
-//            key = (key %26) + 26;
-//        }
+    public String encodeText() {
+        String text = this.input;
+        int key = this.shiftKey;
 
         char[] letters = text.toCharArray();
         for(int i=0; i<letters.length; i++) {
@@ -53,4 +61,5 @@ public class Encoding {
 
         return encodedText;
     }
+
 }
