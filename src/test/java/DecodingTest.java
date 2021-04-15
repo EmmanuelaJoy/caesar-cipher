@@ -16,8 +16,16 @@ public class DecodingTest {
     }
 
     @Test
+    public void decode_emptyString_String() {
+        Decoding decoding = new Decoding("", 1);
+        assertEquals("", decoding.getInputText());
+    }
+
+    @Test
     public void decode_getInputtedKey_int() {
         Decoding decoding = new Decoding("a", 1);
         assertEquals(1, decoding.getInputtedKey());
     }
+
+
 }

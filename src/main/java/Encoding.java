@@ -27,17 +27,17 @@ public class Encoding {
             char individualLetter = letters[i];
             if(Character.isLetter(individualLetter)) {
 
-                if(individualLetter >= 'a' && individualLetter <= 'z'){
+                if(Character.isUpperCase(individualLetter)){
 
-                    individualLetter = (char) (individualLetter - key);
-                    if(individualLetter < 'a') {
-                        individualLetter = (char) (individualLetter-'a'+'z'+1);
+                    char ch = (char)(individualLetter + key);
+                    if(ch > 'Z') {
+                        encodedText += (char)(individualLetter - (26 - key));
                     } else {
-                        encodedText += individualLetter;
+                        encodedText += ch;
                     }
 
                 } else if(Character.isLowerCase(individualLetter)) {
-                    char ch = (char) (individualLetter + key);
+                    char ch = (char)(individualLetter + key);
                     if(ch > 'z') {
                         encodedText += (char) (individualLetter - (26-key));
                     } else {
@@ -45,7 +45,7 @@ public class Encoding {
                     }
                 }
             } else {
-                encodedText +=individualLetter;
+                encodedText += individualLetter;
             }
         }
 
