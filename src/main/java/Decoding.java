@@ -3,14 +3,16 @@ public class Decoding {
     private String encodedText;
     private int inputtedKey;
 
-
-    public String getInputText(String text) {
+    public Decoding(String text, int key) {
         this.encodedText = text;
-        return text;
+        this.inputtedKey = key;
     }
 
-    public int getInputtedKey(int key) {
-        this.inputtedKey = key;
-        return key;
+    public String getInputText() {
+        return this.encodedText;
+    }
+
+    public int getInputtedKey() {
+      return this.inputtedKey;
     }
 }
