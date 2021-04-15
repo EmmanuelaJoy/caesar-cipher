@@ -49,9 +49,18 @@ public class EncodingTest {
     }
 
     @Test
-    public void encode_ignoreWhiteSpace() {
+    public void encode_ignoreWhiteSpace_String() {
         Encoding encoding = new Encoding();
         assertEquals("uif rvjdl", encoding.encodeText("the quick", 1));
         assertEquals("IJ DPEF", encoding.encodeText("HI CODE", 1));
     }
+
+    @Test
+    public void encode_ignoreSymbols_String() {
+        Encoding encoding = new Encoding();
+        assertEquals("@uif r$vjd#l", encoding.encodeText("@the q$uic#k", 1));
+        assertEquals("I*J D^PEF", encoding.encodeText("H*I C^ODE", 1));
+    }
+
+
 }
