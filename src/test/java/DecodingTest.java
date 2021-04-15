@@ -30,7 +30,7 @@ public class DecodingTest {
     @Test
     public void decode_singleCharacter_Character() {
         Decoding decoding = new Decoding("b", 1);
-        assertEquals('a', decoding.decodeSingleCharacter());
+        assertEquals("a", decoding.decodeMultipleCharacters());
     }
 
     @Test
