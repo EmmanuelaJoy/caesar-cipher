@@ -44,4 +44,10 @@ public class DecodingTest {
         Decoding decoding = new Decoding("JK", 2);
         assertEquals("HI", decoding.decodeMultipleCharacters());
     }
+
+    @Test
+    public void decode_ignoreWhiteSpace_String() {
+        Decoding decoding = new Decoding("uif rvjdl", 1);
+        assertEquals("the quick", decoding.decodeMultipleCharacters());
+    }
 }
