@@ -15,4 +15,11 @@ public class EncodingTest {
         Encoding encoding = new Encoding();
         assertEquals("a", encoding.getInput("a", 1));
     }
+
+    @Test
+    public void validate_isStringEmpty_String() {
+        Encoding encoding = new Encoding();
+        assertEquals("", encoding.getInput("", 1));
+    }
+
 }
