@@ -14,4 +14,10 @@ public class DecodingTest {
         Decoding decoding = new Decoding();
         assertEquals("a", decoding.getInputText("a"));
     }
+
+    @Test
+    public void decode_getInputtedKey_int() {
+        Decoding decoding = new Decoding();
+        assertEquals(1, decoding.getInputtedKey(1));
+    }
 }

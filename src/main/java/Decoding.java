@@ -8,4 +8,8 @@ public class Decoding {
         this.encodedText = text;
         return text;
     }
+
+    public int getInputtedKey(int i) {
+        return 0;
+    }
 }
