@@ -47,4 +47,11 @@ public class EncodingTest {
         Encoding encoding = new Encoding();
         assertEquals("JK", encoding.encodeText("HI", 2));
     }
+
+    @Test
+    public void encode_ignoreWhiteSpace() {
+        Encoding encoding = new Encoding();
+        assertEquals("uif rvjdl", encoding.encodeText("the quick", 1));
+        assertEquals("IJ DPEF", encoding.encodeText("HI CODE", 1));
+    }
 }
