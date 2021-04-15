@@ -56,4 +56,10 @@ public class DecodingTest {
         Decoding decoding = new Decoding("@uif r$vjd#l", 1);
         assertEquals("@the q$uic#k", decoding.decodeMultipleCharacters());
     }
+
+    @Test
+    public void decode_encryptedTheQuickBrownFox_String() {
+        Decoding decoding = new Decoding("QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD", 23);
+        assertEquals("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG", decoding.decodeMultipleCharacters());
+    }
 }

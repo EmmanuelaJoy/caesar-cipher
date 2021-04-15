@@ -39,7 +39,7 @@ public class Decoding {
                 } else if(Character.isLowerCase(individualLetter)) {
                     char ch = (char)(individualLetter - key);
                     if(ch > 'z') {
-                        decoded += (char) (individualLetter + (26+key));
+                        decoded += (char) (individualLetter + (26 + key));
                     } else {
                         decoded +=ch;
                     }
