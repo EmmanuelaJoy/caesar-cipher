@@ -9,7 +9,8 @@ public class Decoding {
         return text;
     }
 
-    public int getInputtedKey(int i) {
-        return 0;
+    public int getInputtedKey(int key) {
+        this.inputtedKey = key;
+        return key;
     }
 }
