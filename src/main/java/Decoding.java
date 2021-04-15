@@ -30,16 +30,16 @@ public class Decoding {
                 if(Character.isUpperCase(individualLetter)){
 
                     char ch = (char)(individualLetter - key);
-                    if(ch > 'Z') {
-                        decoded += (char)(individualLetter + (26 + key));
+                    if(ch < 'A') {
+                        decoded += (char)(individualLetter + (26 - key));
                     } else {
                         decoded += ch;
                     }
 
                 } else if(Character.isLowerCase(individualLetter)) {
                     char ch = (char)(individualLetter - key);
-                    if(ch > 'z') {
-                        decoded += (char) (individualLetter + (26 + key));
+                    if(ch < 'a') {
+                        decoded += (char) (individualLetter + (26 - key));
                     } else {
                         decoded +=ch;
                     }

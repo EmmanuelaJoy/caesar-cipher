@@ -41,8 +41,8 @@ public class DecodingTest {
 
     @Test
     public void decode_upperCaseLetters_String() {
-        Decoding decoding = new Decoding("JK", 2);
-        assertEquals("HI", decoding.decodeMultipleCharacters());
+        Decoding decoding = new Decoding("IJ DPEA", 2);
+        assertEquals("GH BNCY", decoding.decodeMultipleCharacters());
     }
 
     @Test
