@@ -32,7 +32,7 @@ public class EncodingTest {
     @Test
     public void encode_singleStringCharacter_Character() {
         Encoding encoding = new Encoding();
-        assertEquals('b', encoding.shiftSingleCharacter("a", 1));
+        assertEquals("b", encoding.encodeText("a", 1));
 
     }
 
