@@ -30,7 +30,7 @@ public class EncodingTest {
     }
 
     @Test
-    public void encode_singleStringCharacter_Character() {
+    public void encode_singleStringCharacter_String() {
         Encoding encoding = new Encoding();
         assertEquals("b", encoding.encodeText("a", 1));
 
@@ -62,5 +62,9 @@ public class EncodingTest {
         assertEquals("I*J D^PEF", encoding.encodeText("H*I C^ODE", 1));
     }
 
-
+    @Test
+    public void encode_theQuickBrownFox_String() {
+        Encoding encoding = new Encoding();
+        assertEquals("QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD", encoding.encodeText("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG", 23));
+    }
 }
