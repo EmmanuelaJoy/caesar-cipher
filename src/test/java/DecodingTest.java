@@ -38,4 +38,10 @@ public class DecodingTest {
         Decoding decoding = new Decoding("bcd", 1);
         assertEquals("abc", decoding.decodeMultipleCharacters());
     }
+
+    @Test
+    public void decode_upperCaseLetters_String() {
+        Decoding decoding = new Decoding("JK", 2);
+        assertEquals("HI", decoding.decodeMultipleCharacters());
+    }
 }
