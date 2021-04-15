@@ -1,3 +1,5 @@
+package models;
+
 public class Decoding {
 
     private String encodedText;
