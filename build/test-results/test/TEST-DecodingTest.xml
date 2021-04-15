@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DecodingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-15T04:54:52" hostname="emmanuela-HP-ENVY-x360-Convertible" time="0.001">
+  <properties/>
+  <testcase name="decode_Instantiates_True" classname="DecodingTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
