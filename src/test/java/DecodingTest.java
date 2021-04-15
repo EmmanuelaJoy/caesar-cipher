@@ -46,6 +46,18 @@ public class DecodingTest {
     }
 
     @Test
+    public void decode_lowerAndUpperCaseLetters_String() {
+        Decoding decoding = new Decoding("Ifmmp uifsf", 1);
+        assertEquals("Hello there", decoding.decodeMultipleCharacters());
+    }
+
+    @Test
+    public void decode_lettersWithNumber_String() {
+        Decoding decoding = new Decoding("j bn 15", 1);
+        assertEquals("i am 15", decoding.decodeMultipleCharacters());
+    }
+
+    @Test
     public void decode_ignoreWhiteSpace_String() {
         Decoding decoding = new Decoding("uif rvjdl", 1);
         assertEquals("the quick", decoding.decodeMultipleCharacters());
@@ -55,12 +67,6 @@ public class DecodingTest {
     public void decode_ignoreSymbols_String() {
         Decoding decoding = new Decoding("@uif r$vjd#l", 1);
         assertEquals("@the q$uic#k", decoding.decodeMultipleCharacters());
-    }
-
-    @Test
-    public void decode_lettersWithNumber_String() {
-        Decoding decoding = new Decoding("j bn 15", 1);
-        assertEquals("i am 15", decoding.decodeMultipleCharacters());
     }
 
     @Test
