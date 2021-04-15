@@ -58,6 +58,12 @@ public class DecodingTest {
     }
 
     @Test
+    public void decode_lettersWithNumber_String() {
+        Decoding decoding = new Decoding("j bn 15", 1);
+        assertEquals("i am 15", decoding.decodeMultipleCharacters());
+    }
+
+    @Test
     public void decode_encryptedTheQuickBrownFox_String() {
         Decoding decoding = new Decoding("QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD", 23);
         assertEquals("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG", decoding.decodeMultipleCharacters());
