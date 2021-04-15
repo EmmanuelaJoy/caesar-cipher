@@ -17,6 +17,17 @@ public class Decoding {
     }
 
     public char decodeSingleCharacter() {
-        return ' ';
+        String text = this.getInputText();
+        int key = this.getInputtedKey();
+        char letter = 'b';
+        char[] letters = text.toCharArray();
+        for(char l: letters) {
+            l -= key;
+            letter =l;
+            return l;
+        }
+
+        return letter;
     }
+
 }
