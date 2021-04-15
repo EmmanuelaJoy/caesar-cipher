@@ -8,7 +8,7 @@ public class CaesarCipher{
 
         Console myConsole = System.console();
         System.out.println("Welcome to Caesar-Cipher App. Follow the steps below to encrypt and decrypt any letters or words of your choice");
-        System.out.println("What action do you want to perform? Enter one of the following options: Encrypt or Decrypt");
+        System.out.println("What action do you want to perform? Enter one of the following options: Encrypt or Decrypt or Exit");
         String choice = myConsole.readLine();
         if(choice.equals("Encrypt")) {
             System.out.println("Enter any word or letter and i will encrypt it for you");
@@ -32,6 +32,17 @@ public class CaesarCipher{
             System.out.println("Now enter a key of any number in the range of 1-25");
             int decryptingKey = Integer.parseInt(myConsole.readLine());
             Decoding decoding = new Decoding(encryptedWord, decryptingKey);
+            boolean valid = decoding.validate();
+
+            if(valid == true) {
+                String decryptedText = decoding.decodeMultipleCharacters();
+                System.out.println("All set now, here is the result: ");
+                System.out.println("Decrypted input: " + decryptedText);
+            } else if (valid == false) {
+                System.out.println("Enter a valid key");
+            }
+
+        }
 
         }
     }
