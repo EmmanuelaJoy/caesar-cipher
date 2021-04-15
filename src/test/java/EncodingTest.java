@@ -9,4 +9,10 @@ public class EncodingTest {
         Encoding encoding = new Encoding();
         assertTrue(encoding instanceof  Encoding);
     }
+
+    @Test
+    public void getInput_readStringAndKey_String() {
+        Encoding encoding = new Encoding();
+        assertEquals("a", encoding.getInput("a", 1));
+    }
 }
