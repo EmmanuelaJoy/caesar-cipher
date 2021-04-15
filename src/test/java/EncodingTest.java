@@ -28,4 +28,11 @@ public class EncodingTest {
         boolean valid = true;
         assertEquals(valid, encoding.validate(1));
     }
+
+    @Test
+    public void encode_singleStringCharacter_Character() {
+        Encoding encoding = new Encoding();
+        assertEquals('b', encoding.shiftSingleCharacter("a", 1));
+
+    }
 }

@@ -11,4 +11,9 @@ public class Encoding {
         this.shiftKey= key;
         return(key>0 && key<26);
     }
+
+    public char shiftSingleCharacter(String text, int key) {
+        this.input = text;
+
+    }
 }
