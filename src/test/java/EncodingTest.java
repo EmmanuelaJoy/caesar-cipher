@@ -35,4 +35,10 @@ public class EncodingTest {
         assertEquals('b', encoding.shiftSingleCharacter("a", 1));
 
     }
+
+    @Test
+    public void encode_multipleStringCharacters_String() {
+        Encoding encoding = new Encoding();
+        assertEquals("bcd", encoding.encodeText("abc", 1));
+    }
 }

@@ -25,4 +25,10 @@ public class Encoding {
         }
         return letter;
     }
+
+    public String encodeText(String text, int key) {
+        this.input = text;
+        this.shiftKey = key;
+        return text;
+    }
 }
