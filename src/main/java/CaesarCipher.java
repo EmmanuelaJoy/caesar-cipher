@@ -11,13 +11,19 @@ public class CaesarCipher{
         String choice = myConsole.readLine();
         if(choice.equals("Encrypt")) {
             System.out.println("Enter any word or letter and i will encrypt it for you");
-            String input = myConsole.readLine();
-            System.out.println("Now enter a key of any number between 1 and 25");
+            String inputtedText = myConsole.readLine();
+            System.out.println("Now enter a key of any number in the range of 1-25");
             int key = Integer.parseInt(myConsole.readLine());
-            Encoding encoding = new Encoding(input, key);
-            System.out.println("All set now, here is the result: ");
-            System.out.println("Your input: " + input);
-            System.out.println("Encrypted input: " );
+            Encoding encoding = new Encoding(inputtedText, key);
+            boolean valid = encoding.validate();
+
+            if(valid == true){
+                String encryptedText = encoding.encodeText();
+                System.out.println("All set now, here is the result: ");
+                System.out.println("Encrypted input: " + encryptedText);
+            } else if (valid == false) {
+                System.out.println("Enter a valid key");
+            }
 
         }
     }
