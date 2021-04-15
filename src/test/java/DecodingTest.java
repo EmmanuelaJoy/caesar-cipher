@@ -8,4 +8,10 @@ public class DecodingTest {
         Decoding decoding = new Decoding();
         assertTrue(decoding instanceof  Decoding);
     }
+
+    @Test
+    public void decode_getInputText_String() {
+        Decoding decoding = new Decoding();
+        assertEquals("a", decoding.getInputText("a"));
+    }
 }

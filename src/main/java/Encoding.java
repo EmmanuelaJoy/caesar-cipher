@@ -16,23 +16,24 @@ public class Encoding {
         String encodedText = "";
         this.input = text;
         this.shiftKey = key;
-        if(key>26) {
-            key = key % 26;
-        }else if(key < 0) {
-            key = (key %26) + 26;
-        }
+//        if(key>26) {
+//            key = key % 26;
+//        }else if(key < 0) {
+//            key = (key %26) + 26;
+//        }
 
         char[] letters = text.toCharArray();
         for(int i=0; i<letters.length; i++) {
             char individualLetter = letters[i];
             if(Character.isLetter(individualLetter)) {
 
-                if(Character.isUpperCase(individualLetter)) {
-                    char ch = (char) (individualLetter + key);
-                    if(ch > 'Z') {
-                        encodedText += (char) (individualLetter - (26 - key));
+                if(individualLetter >= 'a' && individualLetter <= 'z'){
+
+                    individualLetter = (char) (individualLetter - key);
+                    if(individualLetter < 'a') {
+                        individualLetter = (char) (individualLetter-'a'+'z'+1);
                     } else {
-                        encodedText +=ch;
+                        encodedText += individualLetter;
                     }
 
                 } else if(Character.isLowerCase(individualLetter)) {
