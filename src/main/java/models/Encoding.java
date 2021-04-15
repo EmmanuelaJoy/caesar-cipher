@@ -19,10 +19,6 @@ public class Encoding {
         return this.shiftKey;
     }
 
-    public String getEncodedText() {
-        return encodedText;
-    }
-
     public boolean validate() {
         int key = this.shiftKey;
         return(key>0 && key<26);

@@ -19,6 +19,10 @@ public class Decoding {
       return this.inputtedKey;
     }
 
+    public boolean validate() {
+
+    }
+
     public String decodeMultipleCharacters() {
         String text = this.getInputText();
         int key = this.getInputtedKey();

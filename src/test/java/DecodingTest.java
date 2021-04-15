@@ -29,6 +29,13 @@ public class DecodingTest {
     }
 
     @Test
+    public void validate_isKeyValid_Boolean() {
+        Decoding decoding = new Decoding("", 1);
+        boolean valid = true;
+        assertEquals(valid, decoding.validate());
+    }
+
+    @Test
     public void decode_singleCharacter_Character() {
         Decoding decoding = new Decoding("b", 1);
         assertEquals("a", decoding.decodeMultipleCharacters());

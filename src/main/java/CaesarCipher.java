@@ -1,3 +1,4 @@
+import models.Decoding;
 import models.Encoding;
 
 import java.io.Console;
@@ -13,8 +14,8 @@ public class CaesarCipher{
             System.out.println("Enter any word or letter and i will encrypt it for you");
             String inputtedText = myConsole.readLine();
             System.out.println("Now enter a key of any number in the range of 1-25");
-            int key = Integer.parseInt(myConsole.readLine());
-            Encoding encoding = new Encoding(inputtedText, key);
+            int encryptingKey = Integer.parseInt(myConsole.readLine());
+            Encoding encoding = new Encoding(inputtedText, encryptingKey);
             boolean valid = encoding.validate();
 
             if(valid == true){
@@ -24,6 +25,13 @@ public class CaesarCipher{
             } else if (valid == false) {
                 System.out.println("Enter a valid key");
             }
+
+        } else if (choice.equals("Decrypt")) {
+            System.out.println("Enter any encrypted word or letter and i will decrypt it for you");
+            String encryptedWord = myConsole.readLine();
+            System.out.println("Now enter a key of any number in the range of 1-25");
+            int decryptingKey = Integer.parseInt(myConsole.readLine());
+            Decoding decoding = new Decoding(encryptedWord, decryptingKey);
 
         }
     }
