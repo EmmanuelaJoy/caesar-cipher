@@ -41,4 +41,10 @@ public class EncodingTest {
         Encoding encoding = new Encoding();
         assertEquals("bcd", encoding.encodeText("abc", 1));
     }
+
+    @Test
+    public void encode_upperCaseLetters_String() {
+        Encoding encoding = new Encoding();
+        assertEquals("JK", encoding.encodeText("HI", 2));
+    }
 }

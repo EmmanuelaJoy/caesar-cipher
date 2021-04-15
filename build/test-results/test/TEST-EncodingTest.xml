@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EncodingTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-04-15T03:51:36" hostname="emmanuela-HP-ENVY-x360-Convertible" time="0.003">
+<testsuite name="EncodingTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-04-15T03:57:14" hostname="emmanuela-HP-ENVY-x360-Convertible" time="0.003">
   <properties/>
   <testcase name="encode_singleStringCharacter_Character" classname="EncodingTest" time="0.001"/>
   <testcase name="validate_isStringEmpty_String" classname="EncodingTest" time="0.0"/>
   <testcase name="validate_isKeyValid_Boolean" classname="EncodingTest" time="0.0"/>
+  <testcase name="encode_upperCaseLetters_String" classname="EncodingTest" time="0.0"/>
   <testcase name="encode_multipleStringCharacters_String" classname="EncodingTest" time="0.0"/>
   <testcase name="encode_instantiates_True" classname="EncodingTest" time="0.0"/>
   <testcase name="getInput_readStringAndKey_String" classname="EncodingTest" time="0.0"/>
