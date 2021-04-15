@@ -12,13 +12,13 @@
 
 <p>This project was developed by Emmanuela Joy.</p>
 
-<p>Click on [Emmanuela Joy ](https://github.com/EmmanuelaJoy) to find the link to her Github Site.</p>
+Click on [Emmanuela Joy ](https://github.com/EmmanuelaJoy) to find the link to her Github Site.
 
 
 ## Set Up Instructions
 
 To set up this project:
-- Clone the repository - `git clone https://github.com/EmmanuelaJoy/caesar-cipher.git`
+- Clone the repository by executing the following command in your terminal in the directory of your choice - `git clone https://github.com/EmmanuelaJoy/caesar-cipher.git`
 - Navigate into the caesar-cipher-IP directory - `cd caesar-cipher-IP`
 - Build project
 
